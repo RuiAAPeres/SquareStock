@@ -13,9 +13,10 @@
 		B24A2F681AF842FF00B05498 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A2F641AF842FF00B05498 /* ViewController.swift */; };
 		B27189E01AF851A300AED2DF /* LlamaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27189DC1AF8519900AED2DF /* LlamaKit.framework */; };
 		B27189E11AF851A300AED2DF /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27189DD1AF8519900AED2DF /* ReactiveCocoa.framework */; };
-		B289DB881AF9436500B7DEEE /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = B289DB871AF9436500B7DEEE /* Market.swift */; };
 		B289DB8C1AF9450700B7DEEE /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B289DB8B1AF9450700B7DEEE /* String.swift */; };
-		B289DB8E1AF9475500B7DEEE /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B289DB8D1AF9475500B7DEEE /* Stock.swift */; };
+		B289DB941AF94CB600B7DEEE /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = B289DB921AF94CB600B7DEEE /* Market.swift */; };
+		B289DB951AF94CB600B7DEEE /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B289DB931AF94CB600B7DEEE /* Stock.swift */; };
+		B289DB971AF94CBC00B7DEEE /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = B289DB961AF94CBC00B7DEEE /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +40,10 @@
 		B24A2F6A1AF846EF00B05498 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B27189DC1AF8519900AED2DF /* LlamaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LlamaKit.framework; sourceTree = "<group>"; };
 		B27189DD1AF8519900AED2DF /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveCocoa.framework; sourceTree = "<group>"; };
-		B289DB871AF9436500B7DEEE /* Market.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
 		B289DB8B1AF9450700B7DEEE /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		B289DB8D1AF9475500B7DEEE /* Stock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		B289DB921AF94CB600B7DEEE /* Market.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
+		B289DB931AF94CB600B7DEEE /* Stock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		B289DB961AF94CBC00B7DEEE /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				B228ED621AF940E4008B3978 /* SquareAPI.swift */,
-				B289DB871AF9436500B7DEEE /* Market.swift */,
-				B289DB8D1AF9475500B7DEEE /* Stock.swift */,
+				B289DB961AF94CBC00B7DEEE /* Network.swift */,
+				B289DB911AF94CB600B7DEEE /* Model */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -177,6 +179,15 @@
 				B289DB8B1AF9450700B7DEEE /* String.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B289DB911AF94CB600B7DEEE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B289DB921AF94CB600B7DEEE /* Market.swift */,
+				B289DB931AF94CB600B7DEEE /* Stock.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,10 +309,11 @@
 			files = (
 				B289DB8C1AF9450700B7DEEE /* String.swift in Sources */,
 				B24A2F681AF842FF00B05498 /* ViewController.swift in Sources */,
-				B289DB8E1AF9475500B7DEEE /* Stock.swift in Sources */,
+				B289DB951AF94CB600B7DEEE /* Stock.swift in Sources */,
 				B228ED631AF940E4008B3978 /* SquareAPI.swift in Sources */,
 				B24A2F651AF842FF00B05498 /* AppDelegate.swift in Sources */,
-				B289DB881AF9436500B7DEEE /* Market.swift in Sources */,
+				B289DB971AF94CBC00B7DEEE /* Network.swift in Sources */,
+				B289DB941AF94CB600B7DEEE /* Market.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

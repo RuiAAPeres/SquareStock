@@ -8,10 +8,10 @@
 
 import Foundation
 
-public enum Market {
+enum Market {
     case NASDAQ100
     
-    public var description : String {
+    var description : String {
         switch self {
         case .NASDAQ100 : return "NASDAQ100"
         }

@@ -7,9 +7,9 @@
 //
 
 import Foundation
-import LlamaKit
+import ReactiveCocoa
 
-public func fetchStock (market : Market, completion : (Result<[Stock], NSError>) -> ()) -> ()
+func fetchStock (market : Market) -> SignalProducer<[Market], NSError>
 {
-    
-}
+    return fetchStockFromNetwork(market)
+}   
