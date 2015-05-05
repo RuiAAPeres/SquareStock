@@ -17,7 +17,7 @@ func fetchStockFromNetwork (market : Market) -> SignalProducer<[Market], NSError
         NSURLConnection.sendAsynchronousRequest(urlRequest(market), queue: NSOperationQueue.mainQueue()) { (response, data, error) -> Void in
             
             if (error != nil) {
-                sendError(sink, error.connectionError())
+                sendError(sink, error.normalisedError(.NetworkError))
             }
             else
             {
