@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>DB03DBF2-C22A-4BBE-A083-40C33706B90E</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>SquareStock</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>73808BFD50C623C2E663878380B3CEDE4AC611DE</key>
 		<string>https://github.com/RuiAAPeres/SquareStock.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SquareStock.xcodeproj/project.xcworkspace</string>
+	<string>SquareStock.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>73808BFD50C623C2E663878380B3CEDE4AC611DE</key>
