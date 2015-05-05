@@ -16,6 +16,13 @@ func fetchStockFromNetwork (market : Market) -> SignalProducer<[Market], NSError
     return SignalProducer { sink, disposable in
         NSURLConnection.sendAsynchronousRequest(urlRequest(market), queue: NSOperationQueue.mainQueue()) { (response, data, error) -> Void in
             
+            if (error != nil) {
+                sendError(sink, error.connectionError())
+            }
+            else
+            {
+                
+            }
         }
     }
 }
