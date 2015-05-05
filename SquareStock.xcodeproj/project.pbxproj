@@ -32,11 +32,11 @@
 		8894096DA37A0E7FA5A8C930 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B24A2F381AF842CE00B05498 /* SquareStock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquareStock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B24A2F4D1AF842CF00B05498 /* SquareStockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SquareStockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B24A2F521AF842CF00B05498 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B24A2F5E1AF842FF00B05498 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B24A2F601AF842FF00B05498 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B24A2F621AF842FF00B05498 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B24A2F641AF842FF00B05498 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B24A2F6A1AF846EF00B05498 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F96EC62EF63998091F946198 /* Pods-SquareStockTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareStockTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SquareStockTests/Pods-SquareStockTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,17 +103,9 @@
 		B24A2F501AF842CF00B05498 /* SquareStockTests */ = {
 			isa = PBXGroup;
 			children = (
-				B24A2F511AF842CF00B05498 /* Supporting Files */,
+				B24A2F691AF846EF00B05498 /* Supporting Files */,
 			);
 			path = SquareStockTests;
-			sourceTree = "<group>";
-		};
-		B24A2F511AF842CF00B05498 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B24A2F521AF842CF00B05498 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		B24A2F5D1AF842FF00B05498 /* AppDelegate */ = {
@@ -146,6 +138,14 @@
 				B24A2F641AF842FF00B05498 /* ViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B24A2F691AF846EF00B05498 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B24A2F6A1AF846EF00B05498 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		C815CC7494B32962B786162E /* Pods */ = {
@@ -467,7 +467,7 @@
 			baseConfigurationReference = 6AB51DAEF51992A444FDBBCA /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = SquareStock/Info.plist;
+				INFOPLIST_FILE = "SquareStock/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -478,7 +478,7 @@
 			baseConfigurationReference = 5DADC8339F7C8063D537362F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = SquareStock/Info.plist;
+				INFOPLIST_FILE = "SquareStock/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -497,7 +497,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = SquareStockTests/Info.plist;
+				INFOPLIST_FILE = "SquareStockTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SquareStock.app/SquareStock";
@@ -513,7 +513,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = SquareStockTests/Info.plist;
+				INFOPLIST_FILE = "SquareStockTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SquareStock.app/SquareStock";
