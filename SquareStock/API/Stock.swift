@@ -9,5 +9,9 @@
 import Foundation
 
 public struct Stock {
-    
+    let symbol : String
+    let name : String
+    let currency : String
+    let price : Double
+    let delta : Double
 }
