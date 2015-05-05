@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CC31645F7BD1293F25018DD /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8894096DA37A0E7FA5A8C930 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9EA3EECCFB1A66EC70341441 /* Pods_SquareStockTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5432A8BC63C2DCABF65667D2 /* Pods_SquareStockTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B24A2F541AF842CF00B05498 /* SquareStockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A2F531AF842CF00B05498 /* SquareStockTests.swift */; };
 		B24A2F651AF842FF00B05498 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A2F5E1AF842FF00B05498 /* AppDelegate.swift */; };
 		B24A2F661AF842FF00B05498 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B24A2F601AF842FF00B05498 /* Images.xcassets */; };
@@ -24,6 +26,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19777F9EBB80B62BFCA0D81B /* Pods-SquareStockTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareStockTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SquareStockTests/Pods-SquareStockTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5432A8BC63C2DCABF65667D2 /* Pods_SquareStockTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquareStockTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DADC8339F7C8063D537362F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		6AB51DAEF51992A444FDBBCA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8894096DA37A0E7FA5A8C930 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B24A2F381AF842CE00B05498 /* SquareStock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquareStock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B24A2F4D1AF842CF00B05498 /* SquareStockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SquareStockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B24A2F521AF842CF00B05498 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -32,6 +39,7 @@
 		B24A2F601AF842FF00B05498 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B24A2F621AF842FF00B05498 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B24A2F641AF842FF00B05498 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F96EC62EF63998091F946198 /* Pods-SquareStockTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareStockTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SquareStockTests/Pods-SquareStockTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CC31645F7BD1293F25018DD /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,18 +55,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EA3EECCFB1A66EC70341441 /* Pods_SquareStockTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81734C848C0767AC717744FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8894096DA37A0E7FA5A8C930 /* Pods.framework */,
+				5432A8BC63C2DCABF65667D2 /* Pods_SquareStockTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B24A2F2F1AF842CE00B05498 = {
 			isa = PBXGroup;
 			children = (
 				B24A2F3A1AF842CF00B05498 /* SquareStock */,
 				B24A2F501AF842CF00B05498 /* SquareStockTests */,
 				B24A2F391AF842CE00B05498 /* Products */,
+				C815CC7494B32962B786162E /* Pods */,
+				81734C848C0767AC717744FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +151,17 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		C815CC7494B32962B786162E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6AB51DAEF51992A444FDBBCA /* Pods.debug.xcconfig */,
+				5DADC8339F7C8063D537362F /* Pods.release.xcconfig */,
+				19777F9EBB80B62BFCA0D81B /* Pods-SquareStockTests.debug.xcconfig */,
+				F96EC62EF63998091F946198 /* Pods-SquareStockTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B24A2F571AF842CF00B05498 /* Build configuration list for PBXNativeTarget "SquareStock" */;
 			buildPhases = (
+				502991C97C1F05ACD77A08F3 /* Check Pods Manifest.lock */,
 				B24A2F341AF842CE00B05498 /* Sources */,
 				B24A2F351AF842CE00B05498 /* Frameworks */,
 				B24A2F361AF842CE00B05498 /* Resources */,
+				E41782EADFF418C1D7BEC1A9 /* Embed Pods Frameworks */,
+				42D0CE4230EAFF6B1A47949D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -154,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B24A2F5A1AF842CF00B05498 /* Build configuration list for PBXNativeTarget "SquareStockTests" */;
 			buildPhases = (
+				81D34F153E8452F23BFA4DE4 /* Check Pods Manifest.lock */,
 				B24A2F491AF842CF00B05498 /* Sources */,
 				B24A2F4A1AF842CF00B05498 /* Frameworks */,
 				B24A2F4B1AF842CF00B05498 /* Resources */,
+				EC61CDB8BF329E1B9C7E85F3 /* Embed Pods Frameworks */,
+				6156DF347D7B7C04CB51B9EB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -222,6 +260,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42D0CE4230EAFF6B1A47949D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		502991C97C1F05ACD77A08F3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6156DF347D7B7C04CB51B9EB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SquareStockTests/Pods-SquareStockTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81D34F153E8452F23BFA4DE4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E41782EADFF418C1D7BEC1A9 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC61CDB8BF329E1B9C7E85F3 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SquareStockTests/Pods-SquareStockTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B24A2F341AF842CE00B05498 /* Sources */ = {
@@ -337,6 +468,7 @@
 		};
 		B24A2F581AF842CF00B05498 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AB51DAEF51992A444FDBBCA /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SquareStock/Info.plist;
@@ -347,6 +479,7 @@
 		};
 		B24A2F591AF842CF00B05498 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DADC8339F7C8063D537362F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SquareStock/Info.plist;
@@ -357,6 +490,7 @@
 		};
 		B24A2F5B1AF842CF00B05498 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19777F9EBB80B62BFCA0D81B /* Pods-SquareStockTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -376,6 +510,7 @@
 		};
 		B24A2F5C1AF842CF00B05498 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F96EC62EF63998091F946198 /* Pods-SquareStockTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -408,6 +543,7 @@
 				B24A2F591AF842CF00B05498 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B24A2F5A1AF842CF00B05498 /* Build configuration list for PBXNativeTarget "SquareStockTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +552,7 @@
 				B24A2F5C1AF842CF00B05498 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
