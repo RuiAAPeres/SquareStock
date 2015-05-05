@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5CC31645F7BD1293F25018DD /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8894096DA37A0E7FA5A8C930 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		9EA3EECCFB1A66EC70341441 /* Pods_SquareStockTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5432A8BC63C2DCABF65667D2 /* Pods_SquareStockTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		B24A2F541AF842CF00B05498 /* SquareStockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A2F531AF842CF00B05498 /* SquareStockTests.swift */; };
 		B24A2F651AF842FF00B05498 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A2F5E1AF842FF00B05498 /* AppDelegate.swift */; };
 		B24A2F661AF842FF00B05498 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B24A2F601AF842FF00B05498 /* Images.xcassets */; };
 		B24A2F681AF842FF00B05498 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A2F641AF842FF00B05498 /* ViewController.swift */; };
@@ -34,7 +33,6 @@
 		B24A2F381AF842CE00B05498 /* SquareStock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquareStock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B24A2F4D1AF842CF00B05498 /* SquareStockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SquareStockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B24A2F521AF842CF00B05498 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B24A2F531AF842CF00B05498 /* SquareStockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareStockTests.swift; sourceTree = "<group>"; };
 		B24A2F5E1AF842FF00B05498 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B24A2F601AF842FF00B05498 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B24A2F621AF842FF00B05498 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 		B24A2F501AF842CF00B05498 /* SquareStockTests */ = {
 			isa = PBXGroup;
 			children = (
-				B24A2F531AF842CF00B05498 /* SquareStockTests.swift */,
 				B24A2F511AF842CF00B05498 /* Supporting Files */,
 			);
 			path = SquareStockTests;
@@ -368,7 +365,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B24A2F541AF842CF00B05498 /* SquareStockTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
