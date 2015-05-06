@@ -16,13 +16,26 @@ typealias JSON = AnyObject
 typealias JSONDictionary = [String:JSON]
 typealias JSONArray = [JSON]
 
+func _JSONString(object: JSON) -> String? {
+    return object as? String
+}
+
+func _JSONInt(object: JSON) -> Int? {
+    return object as? Int
+}
+
+func _JSONDouble(object: JSON) -> Double? {
+    return object as? Double
+}
+
+func _JSONObject(object: JSON) -> JSONDictionary? {
+    return object as? JSONDictionary
+}
+
 // Mark: Parsing
 
-func parseStocks(responseResult : Result<NSData, NSError>, response : ) -> [Stock]? {
-    
-
-    return responseResult >>= decodeJSON >>= 
-
+func parseStocks(responseResult : Result<NSData, NSError>) -> Result<[Stock],NSError> {
+    return failure(NSError())
 }
 
 private func decodeJSON(data: NSData) -> Result<JSON,NSError> {

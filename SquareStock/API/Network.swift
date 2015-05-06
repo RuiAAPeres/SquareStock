@@ -7,13 +7,14 @@
 //
 
 import Foundation
+import LlamaKit
 import ReactiveCocoa
 
 
 // MARK: Utility Classes
 
 // Stolen from here: https://github.com/chriseidhof/github-issues/blob/master/FunctionalViewControllers/FunctionalViewControllers/APIClient.swift
-public enum Method: String { // Bluntly stolen from Alamofire
+enum Method: String { // Bluntly stolen from Alamofire
     case OPTIONS = "OPTIONS"
     case GET = "GET"
     case HEAD = "HEAD"
@@ -25,21 +26,21 @@ public enum Method: String { // Bluntly stolen from Alamofire
     case CONNECT = "CONNECT"
 }
 
-public let statusCodeIs2xx = { $0 >= 200 && $0 < 300}
+let statusCodeIs2xx = { $0 >= 200 && $0 < 300}
 
-public struct Resource<A> : Printable {
+struct Resource<A> : Printable {
     let path: String
     let method : Method
     let requestBody: NSData?
     let headers : [String:String]
-    let parse: NSData -> A?
+    let parse: Result<NSData,NSError> -> Result<A,NSError>
     let validStatusCode : Int -> Bool
     
-    public var description : String {
+    var description : String {
         return path
     }
     
-    public init(path: String, method: Method, requestBody: NSData?, headers: [String:String], parse: NSData -> A?) {
+    init(path: String, method: Method, requestBody: NSData?, headers: [String:String], parse: Result<NSData,NSError> -> Result<A,NSError>) {
         self.path = path
         self.method = method
         self.requestBody = requestBody
@@ -48,7 +49,7 @@ public struct Resource<A> : Printable {
         self.validStatusCode = statusCodeIs2xx
     }
     
-    public init(path: String, method: Method, requestBody: NSData?, headers: [String:String], validStatusCode: Int -> Bool, parse: NSData -> A?) {
+    init(path: String, method: Method, requestBody: NSData?, headers: [String:String], validStatusCode: Int -> Bool, parse: Result<NSData,NSError> -> Result<A,NSError>) {
         self.path = path
         self.method = method
         self.requestBody = requestBody

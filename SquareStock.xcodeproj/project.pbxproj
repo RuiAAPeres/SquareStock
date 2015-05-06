@@ -22,6 +22,7 @@
 		B2F755311AFA87C20094CC98 /* FunctionalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F755301AFA87C20094CC98 /* FunctionalHelpers.swift */; };
 		B2F755331AFA90730094CC98 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F755321AFA90730094CC98 /* Result.swift */; };
 		B2F755351AFA976A0094CC98 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F755341AFA976A0094CC98 /* Operators.swift */; };
+		B2F755371AFAC36E0094CC98 /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F755361AFAC36D0094CC98 /* JSONDecodable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		B2F755301AFA87C20094CC98 /* FunctionalHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalHelpers.swift; sourceTree = "<group>"; };
 		B2F755321AFA90730094CC98 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		B2F755341AFA976A0094CC98 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		B2F755361AFAC36D0094CC98 /* JSONDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecodable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 		B289DB911AF94CB600B7DEEE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B2F755361AFAC36D0094CC98 /* JSONDecodable.swift */,
 				B289DB921AF94CB600B7DEEE /* Market.swift */,
 				B289DB931AF94CB600B7DEEE /* Stock.swift */,
 			);
@@ -329,6 +332,7 @@
 				B289DB951AF94CB600B7DEEE /* Stock.swift in Sources */,
 				B2F755351AFA976A0094CC98 /* Operators.swift in Sources */,
 				B289DB991AF957DE00B7DEEE /* Error.swift in Sources */,
+				B2F755371AFAC36E0094CC98 /* JSONDecodable.swift in Sources */,
 				B228ED631AF940E4008B3978 /* SquareAPI.swift in Sources */,
 				B24A2F651AF842FF00B05498 /* AppDelegate.swift in Sources */,
 				B289DB971AF94CBC00B7DEEE /* Network.swift in Sources */,
