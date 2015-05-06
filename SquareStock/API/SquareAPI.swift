@@ -9,7 +9,7 @@
 import Foundation
 import ReactiveCocoa
 
-func fetchStock (market : Market) -> SignalProducer<[Market], NSError>
+func fetchStock (market : Market) -> SignalProducer<[Stock], NSError>
 {
     return fetchStockFromNetwork(market)
 }   

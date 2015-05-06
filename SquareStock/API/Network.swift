@@ -11,7 +11,7 @@ import ReactiveCocoa
 
 let baseURL  = "https://squarestock.herokuapp.com/api/v2/"
 
-func fetchStockFromNetwork (market : Market) -> SignalProducer<[Market], NSError>
+func fetchStockFromNetwork (market : Market) -> SignalProducer<[Stock], NSError>
 {
     return SignalProducer { sink, disposable in
         NSURLConnection.sendAsynchronousRequest(urlRequest(market), queue: NSOperationQueue.mainQueue()) { (response, data, error) -> Void in
