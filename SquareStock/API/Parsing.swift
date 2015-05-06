@@ -7,61 +7,31 @@
 //
 
 import Foundation
+import LlamaKit
 
 
-// Mark: Utilities (taken from here: https://gist.github.com/chriseidhof/4c071de50461a802874e)
+// Mark: Utilities (taken from here: https://gist.github.com/chriseidhof/4c071de50461a802874e and https://robots.thoughtbot.com/efficient-json-in-swift-with-functional-concepts-and-generics)
 
-func join<A>(elements: [A?]) -> [A]? {
-    var result : [A] = []
-    for element in elements {
-        if let x = element {
-            result += [x]
-        } else {
-            return nil
-        }
-    }
-    
-    return result
-}
-
-private func toURL(urlString: String) -> NSURL {
-    return NSURL(string: urlString)!
-}
-
-private func asDict(x: AnyObject) -> [String:AnyObject]? {
-    return x as? [String:AnyObject]
-}
-
-private func array(input: [String:AnyObject], key: String) ->  [AnyObject]? {
-    let maybeAny : AnyObject? = input[key]
-    return maybeAny >>>= { $0 as? [AnyObject] }
-}
-
-private func dictionary(input: [String:AnyObject], key: String) ->  [String:AnyObject]? {
-    return input[key] >>>= { $0 as? [String:AnyObject] }
-}
-
-private func string(input: [String:AnyObject], key: String) -> String? {
-    return input[key] >>>= { $0 as? String }
-}
-
-private func number(input: [NSObject:AnyObject], key: String) -> NSNumber? {
-    return input[key] >>>= { $0 as? NSNumber }
-}
-
-private func int(input: [NSObject:AnyObject], key: String) -> Int? {
-    return number(input,key).map { $0.integerValue }
-}
-
-private func bool(input: [NSObject:AnyObject], key: String) -> Bool? {
-    return number(input,key).map { $0.boolValue }
-}
-
+typealias JSON = AnyObject
+typealias JSONDictionary = [String:JSON]
+typealias JSONArray = [JSON]
 
 // Mark: Parsing
 
 func parseStocks(data : NSData) -> [Stock]? {
     
+    var error: NSError?
+    let json: JSON! = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions(0), error: &error)
+
+    
+}
+
+private func decodeJSON(data: NSData) -> Result<JSON,NSError> {
+    
+    var error : NSError? = nil
+    let jsonOptional: AnyObject? = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions(0), error: &error)
+    
+    return resultFromOptional(jsonOptional, normalisedError(.ParseError, error))
 }
 
 

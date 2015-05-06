@@ -25,8 +25,6 @@ public enum Method: String { // Bluntly stolen from Alamofire
     case CONNECT = "CONNECT"
 }
 
-public typealias JSONDictionary = [String:AnyObject]
-
 public let statusCodeIs2xx = { $0 >= 200 && $0 < 300}
 
 public struct Resource<A> : Printable {
