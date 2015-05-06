@@ -11,6 +11,19 @@ import Foundation
 
 // Mark: Utilities (taken from here: https://gist.github.com/chriseidhof/4c071de50461a802874e)
 
+func join<A>(elements: [A?]) -> [A]? {
+    var result : [A] = []
+    for element in elements {
+        if let x = element {
+            result += [x]
+        } else {
+            return nil
+        }
+    }
+    
+    return result
+}
+
 private func toURL(urlString: String) -> NSURL {
     return NSURL(string: urlString)!
 }
