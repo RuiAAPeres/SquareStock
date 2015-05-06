@@ -9,5 +9,5 @@
 import Foundation
 
 func parseStocks(data : NSData) -> [Stock]? {
-    return nil
+    
 }
