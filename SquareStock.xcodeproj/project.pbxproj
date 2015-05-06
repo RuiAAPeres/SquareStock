@@ -21,6 +21,7 @@
 		B2F755281AFA7F3B0094CC98 /* Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F755271AFA7F3B0094CC98 /* Parsing.swift */; };
 		B2F755311AFA87C20094CC98 /* FunctionalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F755301AFA87C20094CC98 /* FunctionalHelpers.swift */; };
 		B2F755331AFA90730094CC98 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F755321AFA90730094CC98 /* Result.swift */; };
+		B2F755351AFA976A0094CC98 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F755341AFA976A0094CC98 /* Operators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		B2F755271AFA7F3B0094CC98 /* Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parsing.swift; sourceTree = "<group>"; };
 		B2F755301AFA87C20094CC98 /* FunctionalHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalHelpers.swift; sourceTree = "<group>"; };
 		B2F755321AFA90730094CC98 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		B2F755341AFA976A0094CC98 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 		B289DB891AF944F600B7DEEE /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B2F755341AFA976A0094CC98 /* Operators.swift */,
 				B2F755301AFA87C20094CC98 /* FunctionalHelpers.swift */,
 				B289DB8A1AF944F600B7DEEE /* Extensions */,
 			);
@@ -324,6 +327,7 @@
 				B2F755311AFA87C20094CC98 /* FunctionalHelpers.swift in Sources */,
 				B24A2F681AF842FF00B05498 /* ViewController.swift in Sources */,
 				B289DB951AF94CB600B7DEEE /* Stock.swift in Sources */,
+				B2F755351AFA976A0094CC98 /* Operators.swift in Sources */,
 				B289DB991AF957DE00B7DEEE /* Error.swift in Sources */,
 				B228ED631AF940E4008B3978 /* SquareAPI.swift in Sources */,
 				B24A2F651AF842FF00B05498 /* AppDelegate.swift in Sources */,

@@ -17,3 +17,12 @@ func resultFromOptional<T,E>(optional : T?, error : E) -> Result<T,E> {
         return failure(error)
     }
 }
+
+func >>= <T,U,E>(a : Result <T,E>, f : T -> Result <U,E>) -> Result<U,E> {
+    switch a {
+    case let .Success(x): return f(x.unbox)
+    case let .Failure(error): return .Failure(error)
+    }
+}
+
+

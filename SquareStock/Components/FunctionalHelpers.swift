@@ -8,30 +8,31 @@
 
 import Foundation
 
-// MARK: Operators (ideas taken from here: http://chris.eidhof.nl/posts/json-parsing-in-swift.html )
+// MARK: Optionals Operators (ideas taken from here: https://github.com/thoughtbot/FunctionalJSON-swift/blob/d3fcf771c20813e57cb54472dd8c55ee33e87ae4/FunctionalJSON/Functional.swift#L5 )
 
-func flatten<A>(a: A??) -> A? {
-    
-    if let b = a {
-        return b
+func >>= <T, U>(a: T?, f: T -> U?) -> U? {
+    if let x = a {
+        return f(x)
+    } else {
+        return .None
     }
-    
-    return nil
 }
 
-infix operator  <*> { associativity left precedence 160 }
-func <*><A, B>(l: (A -> B)?, r: A?) -> B? {
-    
-    if let l1 = l,  r1 = r {
-        return l1(r1)
+func <^> <T, U>(f: T -> U, a: T?) -> U? {
+    if let x = a {
+        return f(x)
+    } else {
+        return .None
     }
-    
-    return nil
 }
 
-infix operator  >>>= {associativity left precedence 160}
-func >>>= <A,B> (optional : A?, f : A -> B?) -> B? {
-    return flatMap(optional, f)
+func <*><T, U>(f: (T -> U)?, a: T?) -> U? {
+    if let x = a {
+        if let fx = f {
+            return fx(x)
+        }
+    }
+    return .None
 }
 
 // MARK: Curry

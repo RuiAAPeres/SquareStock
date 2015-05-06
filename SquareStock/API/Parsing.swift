@@ -18,12 +18,11 @@ typealias JSONArray = [JSON]
 
 // Mark: Parsing
 
-func parseStocks(data : NSData) -> [Stock]? {
+func parseStocks(responseResult : Result<NSData, NSError>, response : ) -> [Stock]? {
     
-    var error: NSError?
-    let json: JSON! = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions(0), error: &error)
 
-    
+    return responseResult >>= decodeJSON >>= 
+
 }
 
 private func decodeJSON(data: NSData) -> Result<JSON,NSError> {
