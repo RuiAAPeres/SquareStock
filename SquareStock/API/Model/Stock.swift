@@ -18,7 +18,7 @@ struct Stock {
 
 extension Stock: JSONDecodable {
     
-    static func decode(json: AnyObject) -> Stock? {
+    static func decode(json: JSON) -> Stock? {
         
         return _JSONObject(json) >>= { d in
             
