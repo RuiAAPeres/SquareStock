@@ -13,15 +13,11 @@ import LlamaKit
 // Mark: Utilities (taken from here: https://gist.github.com/chriseidhof/4c071de50461a802874e and https://robots.thoughtbot.com/efficient-json-in-swift-with-functional-concepts-and-generics)
 
 typealias JSON = AnyObject
-typealias JSONDictionary = [String:JSON]
+typealias JSONDictionary = [String : JSON]
 typealias JSONArray = [JSON]
 
 func _JSONString(object: JSON) -> String? {
     return object as? String
-}
-
-func _JSONInt(object: JSON) -> Int? {
-    return object as? Int
 }
 
 func _JSONDouble(object: JSON) -> Double? {

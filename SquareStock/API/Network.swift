@@ -48,16 +48,6 @@ struct Resource<A> : Printable {
         self.parse = parse
         self.validStatusCode = statusCodeIs2xx
     }
-    
-    init(path: String, method: Method, requestBody: NSData?, headers: [String:String], validStatusCode: Int -> Bool, parse: Result<NSData,NSError> -> Result<A,NSError>) {
-        self.path = path
-        self.method = method
-        self.requestBody = requestBody
-        self.headers = headers
-        self.parse = parse
-        self.validStatusCode = validStatusCode
-    }
-    
 }
 
 // MARK: Request

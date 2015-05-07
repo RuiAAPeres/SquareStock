@@ -1,5 +1,5 @@
 //
-//  JSONDecodable.swift
+//  Optional.swift
 //  SquareStock
 //
 //  Created by Rui Peres on 06/05/2015.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol JSONDecodable {
-    static func decode(json: AnyObject) -> Self?
+func >>= <T, U>(a: T?, f: T -> U?) -> U? {    
+    return flatMap(a, f)
 }

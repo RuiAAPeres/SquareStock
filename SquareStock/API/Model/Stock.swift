@@ -18,17 +18,20 @@ struct Stock {
 
 extension Stock: JSONDecodable {
     
-    static func factory(symbol: String)(name : String)(currency : String)(price : Double)(delta : Double) -> Stock {
-        return Stock(symbol: symbol, name: name, currency: currency, price: price, delta: delta)
-    }
-    
-    static func decode(json: JSON) -> Stock? {
-        return _JSONObject(json) >>= { x in
+    static func decode(json: AnyObject) -> Stock? {
+        
+        return _JSONObject(json) >>= { d in
             
-            Stock.factory <^>
-                x["id"]     >>= _JSONInt    <*>
-                x["name"]   >>= _JSONString <*>
-                x["email"]  >>= _JSONString
+            if  let symbol   = d["symbol"]   >>= _JSONString,
+                let name     = d["name"]     >>= _JSONString,
+                let currency = d["currency"] >>= _JSONString,
+                let price    = d["price"]    >>= _JSONDouble,
+                let delta    = d["delta"]    >>= _JSONDouble
+            {
+                return Stock(symbol: symbol, name: name, currency: currency, price: price, delta: delta)
+            }
+            
+            return nil
         }
     }
 }
