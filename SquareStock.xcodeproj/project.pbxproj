@@ -11,13 +11,14 @@
 		B24A2F651AF842FF00B05498 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A2F5E1AF842FF00B05498 /* AppDelegate.swift */; };
 		B24A2F661AF842FF00B05498 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B24A2F601AF842FF00B05498 /* Images.xcassets */; };
 		B24A2F681AF842FF00B05498 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A2F641AF842FF00B05498 /* ViewController.swift */; };
-		B27189E01AF851A300AED2DF /* LlamaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27189DC1AF8519900AED2DF /* LlamaKit.framework */; };
-		B27189E11AF851A300AED2DF /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27189DD1AF8519900AED2DF /* ReactiveCocoa.framework */; };
 		B289DB8C1AF9450700B7DEEE /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B289DB8B1AF9450700B7DEEE /* String.swift */; };
 		B289DB941AF94CB600B7DEEE /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = B289DB921AF94CB600B7DEEE /* Market.swift */; };
 		B289DB951AF94CB600B7DEEE /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B289DB931AF94CB600B7DEEE /* Stock.swift */; };
 		B289DB971AF94CBC00B7DEEE /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = B289DB961AF94CBC00B7DEEE /* Network.swift */; };
 		B289DB991AF957DE00B7DEEE /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = B289DB981AF957DE00B7DEEE /* Error.swift */; };
+		B295BA841AFEE8DB00033A4A /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B295BA811AFEE8DB00033A4A /* Box.framework */; };
+		B295BA851AFEE8DB00033A4A /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B295BA821AFEE8DB00033A4A /* ReactiveCocoa.framework */; };
+		B295BA861AFEE8DB00033A4A /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B295BA831AFEE8DB00033A4A /* Result.framework */; };
 		B2F755281AFA7F3B0094CC98 /* Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F755271AFA7F3B0094CC98 /* Parsing.swift */; };
 		B2F755311AFA87C20094CC98 /* FunctionalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F755301AFA87C20094CC98 /* FunctionalHelpers.swift */; };
 		B2F755331AFA90730094CC98 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F755321AFA90730094CC98 /* Result.swift */; };
@@ -45,13 +46,14 @@
 		B24A2F621AF842FF00B05498 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B24A2F641AF842FF00B05498 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B24A2F6A1AF846EF00B05498 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B27189DC1AF8519900AED2DF /* LlamaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LlamaKit.framework; sourceTree = "<group>"; };
-		B27189DD1AF8519900AED2DF /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveCocoa.framework; sourceTree = "<group>"; };
 		B289DB8B1AF9450700B7DEEE /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		B289DB921AF94CB600B7DEEE /* Market.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
 		B289DB931AF94CB600B7DEEE /* Stock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		B289DB961AF94CBC00B7DEEE /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		B289DB981AF957DE00B7DEEE /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		B295BA811AFEE8DB00033A4A /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Box.framework; sourceTree = "<group>"; };
+		B295BA821AFEE8DB00033A4A /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveCocoa.framework; sourceTree = "<group>"; };
+		B295BA831AFEE8DB00033A4A /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = "<group>"; };
 		B2F755271AFA7F3B0094CC98 /* Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parsing.swift; sourceTree = "<group>"; };
 		B2F755301AFA87C20094CC98 /* FunctionalHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalHelpers.swift; sourceTree = "<group>"; };
 		B2F755321AFA90730094CC98 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
@@ -65,8 +67,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B27189E01AF851A300AED2DF /* LlamaKit.framework in Frameworks */,
-				B27189E11AF851A300AED2DF /* ReactiveCocoa.framework in Frameworks */,
+				B295BA841AFEE8DB00033A4A /* Box.framework in Frameworks */,
+				B295BA861AFEE8DB00033A4A /* Result.framework in Frameworks */,
+				B295BA851AFEE8DB00033A4A /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,8 +177,9 @@
 		B27189DB1AF8519900AED2DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B27189DC1AF8519900AED2DF /* LlamaKit.framework */,
-				B27189DD1AF8519900AED2DF /* ReactiveCocoa.framework */,
+				B295BA811AFEE8DB00033A4A /* Box.framework */,
+				B295BA821AFEE8DB00033A4A /* ReactiveCocoa.framework */,
+				B295BA831AFEE8DB00033A4A /* Result.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -312,8 +316,9 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Frameworks/LlamaKit.framework",
+				"$(SRCROOT)/Frameworks/Box.framework",
 				"$(SRCROOT)/Frameworks/ReactiveCocoa.framework",
+				"$(SRCROOT)/Frameworks/Result.framework",
 			);
 			outputPaths = (
 			);
