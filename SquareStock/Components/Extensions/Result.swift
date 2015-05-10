@@ -7,14 +7,14 @@
 //
 
 import Foundation
-import LlamaKit
+import Result
 
 func resultFromOptional<T,E>(optional : T?, error : E) -> Result<T,E> {
     if let a = optional {
-        return success(a)
+        return Result(value: a)
     }
     else {
-        return failure(error)
+        return Result(error: error)
     }
 }
 

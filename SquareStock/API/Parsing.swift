@@ -7,8 +7,7 @@
 //
 
 import Foundation
-import LlamaKit
-
+import Result
 
 // Mark: Utilities (taken from here: https://gist.github.com/chriseidhof/4c071de50461a802874e and https://robots.thoughtbot.com/efficient-json-in-swift-with-functional-concepts-and-generics)
 
@@ -38,7 +37,7 @@ func parseStocks(responseResult : Result<NSData, NSError>) -> Result<Stock,NSErr
 private func decodeJSON(data: NSData) -> Result<JSON,NSError> {
     
     var error : NSError? = nil
-    let jsonOptional: AnyObject? = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions(0), error: &error)
+    let jsonOptional: JSON? = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions(0), error: &error)
     
     return resultFromOptional(jsonOptional, normalisedError(.ParseError, error))
 }
