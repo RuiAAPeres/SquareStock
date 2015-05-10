@@ -25,3 +25,15 @@ public func curry<A,B,C,D,E>(f: (A,B,C,D) -> E) -> A -> B -> C -> D -> E {
 public func curry<A,B,C,D,E, F>(f: (A,B,C,D,E) -> F) -> A -> B -> C -> D -> E -> F {
     return { a in { b in { c in { d in { e in f(a,b,c,d,e) } } } } }
 }
+
+
+// Mark: Flip
+
+func flip <T,U,V>(f: (T, U) -> V) -> (U,T) -> V {
+    return {(a,b) in f(b,a)}
+}
+
+func flip <T,U,V,W>(f: (T, U, V) -> W) -> (V,U,T) -> W {
+    return {(a,b,c) in f(c,b,a)}
+}
+

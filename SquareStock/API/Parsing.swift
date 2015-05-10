@@ -35,6 +35,15 @@ func _JSON<T>(object : JSON) -> T? {
     return object as? T
 }
 
+func array(input: JSONDictionary, key: String) ->  JSONArray? {
+    let maybeAny : JSON? = input[key]
+    return maybeAny >>= { $0 as? JSONArray }
+}
+
+func dictionary(input: JSONDictionary, key: String) ->  JSONDictionary? {
+    return input[key] >>= { $0 as? JSONDictionary }
+}
+
 func join<T>(elements: [T?]) -> [T]? {
     var result : [T] = []
     for element in elements {
@@ -68,21 +77,10 @@ func decodeStocks<U: JSONDecodable>(json: JSON) -> Result<[U], NSError> {
     
     let x = _JSONObject(json) >>= curry(flip(array))("stocks")
     
-        
+    
     return resultFromOptional([U.decode(json)!], NSError())
 }
 
-func flip <T,U,V>(f: (T, U) -> V) -> (U,T) -> V {
-    return {(a,b) in f(b,a)}
-}
 
-func array(input: [String:AnyObject], key: String) ->  JSONArray? {
-    let maybeAny : AnyObject? = input[key]
-    return maybeAny >>= { $0 as? JSONArray }
-}
-
-func dictionary(input: [String:AnyObject], key: String) ->  JSONDictionary? {
-    return input[key] >>= { $0 as? JSONDictionary }
-}
 
 
