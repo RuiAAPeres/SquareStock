@@ -16,9 +16,9 @@
 		B289DB951AF94CB600B7DEEE /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B289DB931AF94CB600B7DEEE /* Stock.swift */; };
 		B289DB971AF94CBC00B7DEEE /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = B289DB961AF94CBC00B7DEEE /* Network.swift */; };
 		B289DB991AF957DE00B7DEEE /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = B289DB981AF957DE00B7DEEE /* Error.swift */; };
-		B295BA841AFEE8DB00033A4A /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B295BA811AFEE8DB00033A4A /* Box.framework */; };
-		B295BA851AFEE8DB00033A4A /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B295BA821AFEE8DB00033A4A /* ReactiveCocoa.framework */; };
-		B295BA861AFEE8DB00033A4A /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B295BA831AFEE8DB00033A4A /* Result.framework */; };
+		B295BA871AFEEC5200033A4A /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B295BA811AFEE8DB00033A4A /* Box.framework */; };
+		B295BA881AFEEC5200033A4A /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B295BA821AFEE8DB00033A4A /* ReactiveCocoa.framework */; };
+		B295BA891AFEEC5200033A4A /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B295BA831AFEE8DB00033A4A /* Result.framework */; };
 		B2F755281AFA7F3B0094CC98 /* Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F755271AFA7F3B0094CC98 /* Parsing.swift */; };
 		B2F755311AFA87C20094CC98 /* FunctionalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F755301AFA87C20094CC98 /* FunctionalHelpers.swift */; };
 		B2F755331AFA90730094CC98 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F755321AFA90730094CC98 /* Result.swift */; };
@@ -67,9 +67,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B295BA841AFEE8DB00033A4A /* Box.framework in Frameworks */,
-				B295BA861AFEE8DB00033A4A /* Result.framework in Frameworks */,
-				B295BA851AFEE8DB00033A4A /* ReactiveCocoa.framework in Frameworks */,
+				B295BA871AFEEC5200033A4A /* Box.framework in Frameworks */,
+				B295BA881AFEEC5200033A4A /* ReactiveCocoa.framework in Frameworks */,
+				B295BA891AFEEC5200033A4A /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +404,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -443,6 +447,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;

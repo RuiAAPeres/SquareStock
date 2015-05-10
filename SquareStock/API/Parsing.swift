@@ -30,7 +30,7 @@ func _JSONObject(object: JSON) -> JSONDictionary? {
 // Mark: Parsing
 
 func parseStocks(responseResult : Result<NSData, NSError>) -> Result<Stock,NSError> {
-    return responseResult >>= decodeJSON >>= decodeObject
+    return responseResult >>- decodeJSON >>- decodeObject
 
 }
 
@@ -45,9 +45,4 @@ private func decodeJSON(data: NSData) -> Result<JSON,NSError> {
 func decodeObject<U: JSONDecodable>(json: JSON) -> Result<U, NSError> {
     return resultFromOptional(U.decode(json), NSError())
 }
-
-//func decodeArray<U: JSONDecodable>(json: JSON) -> Result<[U], NSError> {
-//    return resultFromOptional(U.decode(json), NSError())
-//}
-
 

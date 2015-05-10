@@ -17,7 +17,3 @@ func resultFromOptional<T,E>(optional : T?, error : E) -> Result<T,E> {
         return Result(error: error)
     }
 }
-
-func >>= <T,U,E>(a : Result <T,E>, f : T -> Result <U,E>) -> Result<U,E> {
-   return a.flatMap(f)
-}
