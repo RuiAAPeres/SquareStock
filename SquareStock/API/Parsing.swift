@@ -27,11 +27,32 @@ func _JSONObject(object: JSON) -> JSONDictionary? {
     return object as? JSONDictionary
 }
 
-// Mark: Parsing
+func _JSONArray(object: JSON) -> JSONArray? {
+    return object as? JSONArray
+}
 
-func parseStocks(responseResult : Result<NSData, NSError>) -> Result<Stock,NSError> {
-    return responseResult >>- decodeJSON >>- decodeObject
+func _JSON<T>(object : JSON) -> T? {
+    return object as? T
+}
 
+func join<T>(elements: [T?]) -> [T]? {
+    var result : [T] = []
+    for element in elements {
+        if let x = element {
+            result += [x]
+        } else {
+            return nil
+        }
+    }
+    
+    return result
+}
+
+// Mark: Parsing Stock
+
+func parseStocks(responseResult : Result<NSData, NSError>) -> Result<[Stock],NSError> {
+    return responseResult >>- decodeJSON >>- decodeStocks
+    
 }
 
 private func decodeJSON(data: NSData) -> Result<JSON,NSError> {
@@ -42,7 +63,26 @@ private func decodeJSON(data: NSData) -> Result<JSON,NSError> {
     return resultFromOptional(jsonOptional, normalisedError(.ParseError, error))
 }
 
-func decodeObject<U: JSONDecodable>(json: JSON) -> Result<U, NSError> {
-    return resultFromOptional(U.decode(json), NSError())
+func decodeStocks<U: JSONDecodable>(json: JSON) -> Result<[U], NSError> {
+    
+    
+    let x = _JSONObject(json) >>= curry(flip(array))("stocks")
+    
+        
+    return resultFromOptional([U.decode(json)!], NSError())
 }
+
+func flip <T,U,V>(f: (T, U) -> V) -> (U,T) -> V {
+    return {(a,b) in f(b,a)}
+}
+
+func array(input: [String:AnyObject], key: String) ->  JSONArray? {
+    let maybeAny : AnyObject? = input[key]
+    return maybeAny >>= { $0 as? JSONArray }
+}
+
+func dictionary(input: [String:AnyObject], key: String) ->  JSONDictionary? {
+    return input[key] >>= { $0 as? JSONDictionary }
+}
+
 
