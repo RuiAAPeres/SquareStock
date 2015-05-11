@@ -38,6 +38,6 @@ func flip <T,U,V,W>(f: (T, U, V) -> W) -> (V,U,T) -> W {
 }
 
 // Mark: Composition
-public func • <T, U, V>(f: T -> U, g: U -> V) -> (T ->V) {
+public func • <T, U, V>(f: T -> U, g: U -> V) -> (T -> V) {
     return { x in g(f(x)) }
 }
