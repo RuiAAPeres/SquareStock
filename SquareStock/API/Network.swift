@@ -54,7 +54,7 @@ struct Resource<A> : Printable {
 
 let baseURL : NSURL = NSURL(string:"https://squarestock.herokuapp.com/api/v2/")!
 
-func fetchStockFromNetwork (resource : Resource<Stock>) -> SignalProducer<Stock, NSError> {
+func fetchStockFromNetwork (resource : Resource<[Stock]>) -> SignalProducer<[Stock], NSError> {
     let requestURL = baseURL.URLByAppendingPathComponent(resource.path)
     let request = NSURLRequest(URL:requestURL)
     
