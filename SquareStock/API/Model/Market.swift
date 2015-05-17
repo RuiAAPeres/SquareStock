@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Market {
+public enum Market {
     case NASDAQ100
     
     var description : String {

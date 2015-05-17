@@ -8,8 +8,6 @@
 
 import Foundation
 import Result
-import ReactiveCocoa
-
 
 // MARK: Utility Classes
 
@@ -54,20 +52,13 @@ struct Resource<A> : Printable {
 
 let baseURL : NSURL = NSURL(string:"https://squarestock.herokuapp.com/api/v2/")!
 
-func fetchStockFromNetwork (resource : Resource<[Stock]>) -> SignalProducer<[Stock], NSError> {
+func request <A>(resource : Resource <A>, completion : Result <A, NSError> -> ())  {
+    
     let requestURL = baseURL.URLByAppendingPathComponent(resource.path)
     let request = NSURLRequest(URL:requestURL)
-    
-    return SignalProducer { sink, disposable in
-        NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { (response, data, error) -> Void in
-            
-            if (error != nil) {
-                sendError(sink, error.normalisedError(.NetworkError))
-            }
-            else {
-                
-            }
-        }
+
+    NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { (response, data, error) -> Void in
+        completion(resource.parse(result(data, error)))
     }
 }
 
@@ -76,8 +67,3 @@ func pathFrom(#market : Market) -> String {
     case .NASDAQ100 : return "nasdaq100"
     }
 }
-
-
-
-
-

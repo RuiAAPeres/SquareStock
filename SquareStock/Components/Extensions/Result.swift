@@ -17,3 +17,12 @@ func resultFromOptional<T,E>(optional : T?, error : E) -> Result<T,E> {
         return Result(error: error)
     }
 }
+
+func result<T>(value : T!, error : NSError!) -> Result<T,NSError> {
+    if (error != nil) {
+        return Result(error: error)
+    }
+    else {
+        return Result(value: value)
+    }
+}

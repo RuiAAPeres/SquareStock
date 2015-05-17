@@ -7,11 +7,11 @@
 //
 
 import Foundation
-import ReactiveCocoa
+import Result
 
-func fetchStock (market : Market) -> SignalProducer<[Stock], NSError> {
+public func fetchStock(market : Market, completion : Result<[Stock], NSError> -> ())  {
     
     let resource = Resource<[Stock]>(path: pathFrom(market: market), method: .GET, requestBody: nil, headers: [:], parse: parseStocks)
     
-    return fetchStockFromNetwork(resource)
+    request(resource, completion)
 }

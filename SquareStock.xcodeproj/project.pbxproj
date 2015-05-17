@@ -19,6 +19,9 @@
 		B295BA871AFEEC5200033A4A /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B295BA811AFEE8DB00033A4A /* Box.framework */; };
 		B295BA881AFEEC5200033A4A /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B295BA821AFEE8DB00033A4A /* ReactiveCocoa.framework */; };
 		B295BA891AFEEC5200033A4A /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B295BA831AFEE8DB00033A4A /* Result.framework */; };
+		B2F370FD1B08E4CD003442A9 /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F370FC1B08E4CD003442A9 /* APITests.swift */; };
+		B2F371001B08E6C1003442A9 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F370FF1B08E6C1003442A9 /* OHHTTPStubs.framework */; };
+		B2F371031B08E872003442A9 /* NASDAQ100.json in Resources */ = {isa = PBXBuildFile; fileRef = B2F371021B08E872003442A9 /* NASDAQ100.json */; };
 		B2F3E1521B00A6A900E4016F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F3E1511B00A6A900E4016F /* Main.storyboard */; };
 		B2F755281AFA7F3B0094CC98 /* Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F755271AFA7F3B0094CC98 /* Parsing.swift */; };
 		B2F755311AFA87C20094CC98 /* FunctionalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F755301AFA87C20094CC98 /* FunctionalHelpers.swift */; };
@@ -55,6 +58,9 @@
 		B295BA811AFEE8DB00033A4A /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Box.framework; sourceTree = "<group>"; };
 		B295BA821AFEE8DB00033A4A /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveCocoa.framework; sourceTree = "<group>"; };
 		B295BA831AFEE8DB00033A4A /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = "<group>"; };
+		B2F370FC1B08E4CD003442A9 /* APITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
+		B2F370FF1B08E6C1003442A9 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OHHTTPStubs.framework; sourceTree = "<group>"; };
+		B2F371021B08E872003442A9 /* NASDAQ100.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = NASDAQ100.json; path = ../../../../../Desktop/NASDAQ100.json; sourceTree = "<group>"; };
 		B2F3E1511B00A6A900E4016F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B2F755271AFA7F3B0094CC98 /* Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parsing.swift; sourceTree = "<group>"; };
 		B2F755301AFA87C20094CC98 /* FunctionalHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalHelpers.swift; sourceTree = "<group>"; };
@@ -79,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2F371001B08E6C1003442A9 /* OHHTTPStubs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,7 +138,9 @@
 		B24A2F501AF842CF00B05498 /* SquareStockTests */ = {
 			isa = PBXGroup;
 			children = (
+				B2F371011B08E753003442A9 /* Mocked Responses */,
 				B24A2F691AF846EF00B05498 /* Supporting Files */,
+				B2F370FC1B08E4CD003442A9 /* APITests.swift */,
 			);
 			path = SquareStockTests;
 			sourceTree = "<group>";
@@ -180,6 +189,7 @@
 		B27189DB1AF8519900AED2DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B2F370FF1B08E6C1003442A9 /* OHHTTPStubs.framework */,
 				B295BA811AFEE8DB00033A4A /* Box.framework */,
 				B295BA821AFEE8DB00033A4A /* ReactiveCocoa.framework */,
 				B295BA831AFEE8DB00033A4A /* Result.framework */,
@@ -216,6 +226,14 @@
 				B289DB931AF94CB600B7DEEE /* Stock.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B2F371011B08E753003442A9 /* Mocked Responses */ = {
+			isa = PBXGroup;
+			children = (
+				B2F371021B08E872003442A9 /* NASDAQ100.json */,
+			);
+			path = "Mocked Responses";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +326,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2F371031B08E872003442A9 /* NASDAQ100.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2F370FD1B08E4CD003442A9 /* APITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +487,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -481,6 +502,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -495,9 +517,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -506,6 +530,7 @@
 				INFOPLIST_FILE = "SquareStockTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SquareStock.app/SquareStock";
 			};
 			name = Debug;
@@ -514,9 +539,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = "SquareStockTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
