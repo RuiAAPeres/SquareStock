@@ -50,9 +50,7 @@ struct Resource<A> : Printable {
 
 // MARK: Request
 
-let baseURL : NSURL = NSURL(string:"https://squarestock.herokuapp.com/api/v2/")!
-
-func request <A>(resource : Resource <A>, completion : Result <A, NSError> -> ())  {
+func request <A>(baseURL : NSURL, resource : Resource <A>, completion : Result <A, NSError> -> ())  {
     
     let requestURL = baseURL.URLByAppendingPathComponent(resource.path)
     let request = NSURLRequest(URL:requestURL)
@@ -62,8 +60,3 @@ func request <A>(resource : Resource <A>, completion : Result <A, NSError> -> ()
     }
 }
 
-func pathFrom(#market : Market) -> String {
-    switch market {
-    case .NASDAQ100 : return "nasdaq100"
-    }
-}

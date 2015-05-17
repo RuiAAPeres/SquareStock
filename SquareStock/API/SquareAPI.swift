@@ -9,9 +9,11 @@
 import Foundation
 import Result
 
+let baseURL : NSURL = NSURL(string:"https://squarestock.herokuapp.com/api/v2/")!
+
 public func fetchStock(market : Market, completion : Result<[Stock], NSError> -> ())  {
     
-    let resource = Resource<[Stock]>(path: pathFrom(market: market), method: .GET, requestBody: nil, headers: [:], parse: parseStocks)
+    let resource = Resource<[Stock]>(path: pathFor(market: market), method: .GET, requestBody: nil, headers: [:], parse: parseStocks)
     
-    request(resource, completion)
+    request(baseURL, resource, completion)
 }

@@ -17,3 +17,9 @@ public enum Market {
         }
     }
 }
+
+func pathFor(#market : Market) -> String {
+    switch market {
+    case .NASDAQ100 : return "nasdaq100"
+    }
+}

@@ -58,7 +58,7 @@ private func decodeJSON(data: NSData) -> (Result<JSON,NSError>) {
     return resultFromOptional(jsonOptional, normalisedError(.ParseError, error))
 }
 
-func decodeObject<U: JSONDecodable>(json: JSON) -> Result<[U], NSError> {
+private func decodeObject<U: JSONDecodable>(json: JSON) -> Result<[U], NSError> {
 
     let f = curry(flip(array))("stocks")
     let g = {(a : JSONArray) in join(a.map(U.decode))}
