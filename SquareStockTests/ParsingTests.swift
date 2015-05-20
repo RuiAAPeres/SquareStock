@@ -23,9 +23,7 @@ class ParsingTests: XCTestCase {
     }
 
     func testParsingValidNASDAQ100Stocks() {
-        
-        let path = NSBundle(forClass: self.dynamicType).pathForResource("NASDAQ100", ofType: "json")!
-        let jsonData = NSData(contentsOfFile: path)!
+        let jsonData = dataFromJSONFile(self.dynamicType, "NASDAQ100")
         let result = Result<NSData, NSError>(value: jsonData)
         
         let stocks = parseStocks(result)
