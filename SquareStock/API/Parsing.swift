@@ -46,7 +46,7 @@ func dictionary(input: JSONDictionary, key: String) ->  JSONDictionary? {
 
 // Mark: Parsing Stock
 
-func parseStocks(responseResult : Result<NSData, NSError>) -> Result<[Stock],NSError> {
+public func parseStocks(responseResult : Result<NSData, NSError>) -> Result<[Stock],NSError> {
     return responseResult >>- decodeJSON >>- decodeObject
 }
 

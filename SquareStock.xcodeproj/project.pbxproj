@@ -19,8 +19,8 @@
 		B295BA871AFEEC5200033A4A /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B295BA811AFEE8DB00033A4A /* Box.framework */; };
 		B295BA881AFEEC5200033A4A /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B295BA821AFEE8DB00033A4A /* ReactiveCocoa.framework */; };
 		B295BA891AFEEC5200033A4A /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B295BA831AFEE8DB00033A4A /* Result.framework */; };
+		B2DA51C31B0CF2D60078AC36 /* ParsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DA51C21B0CF2D60078AC36 /* ParsingTests.swift */; };
 		B2F370FD1B08E4CD003442A9 /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F370FC1B08E4CD003442A9 /* APITests.swift */; };
-		B2F371001B08E6C1003442A9 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F370FF1B08E6C1003442A9 /* OHHTTPStubs.framework */; };
 		B2F371031B08E872003442A9 /* NASDAQ100.json in Resources */ = {isa = PBXBuildFile; fileRef = B2F371021B08E872003442A9 /* NASDAQ100.json */; };
 		B2F3E1521B00A6A900E4016F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F3E1511B00A6A900E4016F /* Main.storyboard */; };
 		B2F755281AFA7F3B0094CC98 /* Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F755271AFA7F3B0094CC98 /* Parsing.swift */; };
@@ -58,8 +58,8 @@
 		B295BA811AFEE8DB00033A4A /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Box.framework; sourceTree = "<group>"; };
 		B295BA821AFEE8DB00033A4A /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveCocoa.framework; sourceTree = "<group>"; };
 		B295BA831AFEE8DB00033A4A /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = "<group>"; };
+		B2DA51C21B0CF2D60078AC36 /* ParsingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsingTests.swift; sourceTree = "<group>"; };
 		B2F370FC1B08E4CD003442A9 /* APITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
-		B2F370FF1B08E6C1003442A9 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OHHTTPStubs.framework; sourceTree = "<group>"; };
 		B2F371021B08E872003442A9 /* NASDAQ100.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = NASDAQ100.json; path = ../../../../../Desktop/NASDAQ100.json; sourceTree = "<group>"; };
 		B2F3E1511B00A6A900E4016F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B2F755271AFA7F3B0094CC98 /* Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parsing.swift; sourceTree = "<group>"; };
@@ -85,7 +85,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2F371001B08E6C1003442A9 /* OHHTTPStubs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +140,7 @@
 				B2F371011B08E753003442A9 /* Mocked Responses */,
 				B24A2F691AF846EF00B05498 /* Supporting Files */,
 				B2F370FC1B08E4CD003442A9 /* APITests.swift */,
+				B2DA51C21B0CF2D60078AC36 /* ParsingTests.swift */,
 			);
 			path = SquareStockTests;
 			sourceTree = "<group>";
@@ -189,7 +189,6 @@
 		B27189DB1AF8519900AED2DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B2F370FF1B08E6C1003442A9 /* OHHTTPStubs.framework */,
 				B295BA811AFEE8DB00033A4A /* Box.framework */,
 				B295BA821AFEE8DB00033A4A /* ReactiveCocoa.framework */,
 				B295BA831AFEE8DB00033A4A /* Result.framework */,
@@ -377,6 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2DA51C31B0CF2D60078AC36 /* ParsingTests.swift in Sources */,
 				B2F370FD1B08E4CD003442A9 /* APITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +412,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -461,6 +462,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -518,6 +520,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -540,6 +543,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
