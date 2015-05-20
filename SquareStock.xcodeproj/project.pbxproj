@@ -20,7 +20,7 @@
 		B295BA881AFEEC5200033A4A /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B295BA821AFEE8DB00033A4A /* ReactiveCocoa.framework */; };
 		B295BA891AFEEC5200033A4A /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B295BA831AFEE8DB00033A4A /* Result.framework */; };
 		B2DA51C31B0CF2D60078AC36 /* ParsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DA51C21B0CF2D60078AC36 /* ParsingTests.swift */; };
-		B2DA51C61B0D01AF0078AC36 /* TestTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DA51C51B0D01AF0078AC36 /* TestTools.swift */; };
+		B2DA51C61B0D01AF0078AC36 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DA51C51B0D01AF0078AC36 /* Helpers.swift */; };
 		B2F370FD1B08E4CD003442A9 /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F370FC1B08E4CD003442A9 /* APITests.swift */; };
 		B2F371031B08E872003442A9 /* NASDAQ100.json in Resources */ = {isa = PBXBuildFile; fileRef = B2F371021B08E872003442A9 /* NASDAQ100.json */; };
 		B2F3E1521B00A6A900E4016F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F3E1511B00A6A900E4016F /* Main.storyboard */; };
@@ -60,7 +60,7 @@
 		B295BA821AFEE8DB00033A4A /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveCocoa.framework; sourceTree = "<group>"; };
 		B295BA831AFEE8DB00033A4A /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = "<group>"; };
 		B2DA51C21B0CF2D60078AC36 /* ParsingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsingTests.swift; sourceTree = "<group>"; };
-		B2DA51C51B0D01AF0078AC36 /* TestTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTools.swift; sourceTree = "<group>"; };
+		B2DA51C51B0D01AF0078AC36 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		B2F370FC1B08E4CD003442A9 /* APITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
 		B2F371021B08E872003442A9 /* NASDAQ100.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = NASDAQ100.json; path = ../../../../../Desktop/NASDAQ100.json; sourceTree = "<group>"; };
 		B2F3E1511B00A6A900E4016F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -233,7 +233,7 @@
 		B2DA51C41B0D01700078AC36 /* Test Tools */ = {
 			isa = PBXGroup;
 			children = (
-				B2DA51C51B0D01AF0078AC36 /* TestTools.swift */,
+				B2DA51C51B0D01AF0078AC36 /* Helpers.swift */,
 			);
 			path = "Test Tools";
 			sourceTree = "<group>";
@@ -389,7 +389,7 @@
 			files = (
 				B2DA51C31B0CF2D60078AC36 /* ParsingTests.swift in Sources */,
 				B2F370FD1B08E4CD003442A9 /* APITests.swift in Sources */,
-				B2DA51C61B0D01AF0078AC36 /* TestTools.swift in Sources */,
+				B2DA51C61B0D01AF0078AC36 /* Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

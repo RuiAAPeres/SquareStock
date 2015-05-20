@@ -1,5 +1,5 @@
 //
-//  TestTools.swift
+//  Helpers
 //  SquareStock
 //
 //  Created by Rui Peres on 20/05/2015.
