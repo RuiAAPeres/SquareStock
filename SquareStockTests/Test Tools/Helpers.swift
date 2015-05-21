@@ -7,8 +7,17 @@
 //
 
 import Foundation
+import XCTest
 
-func dataFromJSONFile(className : AnyClass,  file: String) -> NSData {
+func dataFromJSONFile(className: AnyClass,  file: String) -> NSData {
     let path = NSBundle(forClass: className.self).pathForResource(file, ofType: "json")!
     return NSData(contentsOfFile: path)!
+}
+
+func assertOptional<T>(value: T?, assertion: T -> ()) {
+    if let unwrappedValue = value {
+        assertion(unwrappedValue)
+    } else {
+        XCTFail()
+    }
 }
