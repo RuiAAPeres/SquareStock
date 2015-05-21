@@ -1,0 +1,10 @@
+{
+    "market": {
+        "symbol": "NASDAQOMX",
+        "name": "NASDAQ-100 (NDX)",
+        "currency": "USD",
+        "price": 4994350690932,
+        "delta": -0.0012684437463517106
+    },
+    "stocks": []
+}

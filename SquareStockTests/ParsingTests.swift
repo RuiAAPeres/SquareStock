@@ -12,7 +12,7 @@ import Result
 
 class ParsingTests: XCTestCase {
 
-    func testParsingValidNASDAQ100Stocks() {
+    func testValidNASDAQ100Stocks() {
         let jsonData = dataFromJSONFile(self.dynamicType, "NASDAQ100")
         let result = Result<NSData, NSError>(value: jsonData)
         
@@ -25,12 +25,38 @@ class ParsingTests: XCTestCase {
         }
     }
     
+    func testEmptyStocks() {
+        let jsonData = dataFromJSONFile(self.dynamicType, "EmptyJSON")
+        let result = Result<NSData, NSError>(value: jsonData)
+        
+        let stocks = parseStocks(result)
+        
+        if let unwrappedStocks = stocks.value {
+            XCTAssertTrue(unwrappedStocks.count == 0)
+        } else {
+            XCTFail()
+        }
+    }
+    
     func testIncompleteJSON() {
         let jsonData = dataFromJSONFile(self.dynamicType, "IncompleteJSON")
         let result = Result<NSData, NSError>(value: jsonData)
         
         let stocks = parseStocks(result)
 
+        if let unwrappedError = stocks.error {
+            XCTAssertTrue(unwrappedError.code == Error.ParseError.rawValue, "Should be a parsing error")
+        } else {
+            XCTFail()
+        }
+    }
+    
+    func testEmptyData() {
+        let jsonData = NSData()
+        let result = Result<NSData, NSError>(value: jsonData)
+        
+        let stocks = parseStocks(result)
+        
         if let unwrappedError = stocks.error {
             XCTAssertTrue(unwrappedError.code == Error.ParseError.rawValue, "Should be a parsing error")
         } else {
