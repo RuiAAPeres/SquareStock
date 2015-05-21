@@ -2,4 +2,4 @@ language: objective-c
 xcode_project: SquareStock.xcodeproj
 xcode_scheme: SquareStock
 script: 
-	xctool -project SquareStock.xcodeproj -scheme SquareStock -sdk iphonesimulator build test
+	- xctool -project SquareStock.xcodeproj -scheme SquareStock -sdk iphonesimulator build test
