@@ -12,16 +12,6 @@ import Result
 
 class ParsingTests: XCTestCase {
 
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-
     func testParsingValidNASDAQ100Stocks() {
         let jsonData = dataFromJSONFile(self.dynamicType, "NASDAQ100")
         let result = Result<NSData, NSError>(value: jsonData)
@@ -34,5 +24,19 @@ class ParsingTests: XCTestCase {
             XCTFail()
         }
     }
+    
+    func testIncompleteJSON() {
+        let jsonData = dataFromJSONFile(self.dynamicType, "IncompleteJSON")
+        let result = Result<NSData, NSError>(value: jsonData)
+        
+        let stocks = parseStocks(result)
+
+        if let unwrappedError = stocks.error {
+            XCTAssertTrue(unwrappedError.code == Error.ParseError.rawValue, "Should be a parsing error")
+        } else {
+            XCTFail()
+        }
+    }
+    
 }
  

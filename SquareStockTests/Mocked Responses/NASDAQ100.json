@@ -1,0 +1,704 @@
+{
+    "market": {
+        "symbol": "NASDAQOMX",
+        "name": "NASDAQ-100 (NDX)",
+        "currency": "USD",
+        "price": 4994350690932,
+        "delta": -0.0012684437463517106
+    },
+    "stocks": [
+               {
+               "symbol": "AAPL",
+               "name": "Apple Inc",
+               "currency": "USD",
+               "price": 128.715,
+               "delta": -0.006875655518004953
+               },
+               {
+               "symbol": "ADBE",
+               "name": "Adobe Systems Inc",
+               "currency": "USD",
+               "price": 77.73,
+               "delta": -0.007719027402547374
+               },
+               {
+               "symbol": "ADI",
+               "name": "Analog Devices Inc",
+               "currency": "USD",
+               "price": 58.38,
+               "delta": 0.0073655361425144505
+               },
+               {
+               "symbol": "ADP",
+               "name": "Automatic Data Processing Inc",
+               "currency": "USD",
+               "price": 87.59,
+               "delta": -0.005480077634433145
+               },
+               {
+               "symbol": "ADSK",
+               "name": "Autodesk Inc",
+               "currency": "USD",
+               "price": 61.11,
+               "delta": 0.00032727867779414055
+               },
+               {
+               "symbol": "AKAM",
+               "name": "Akamai Technologies Inc",
+               "currency": "USD",
+               "price": 70.29,
+               "delta": 0.0009958742353106675
+               },
+               {
+               "symbol": "ALTR",
+               "name": "Altera Corp",
+               "currency": "USD",
+               "price": 35.8,
+               "delta": 0.012290502793296243
+               },
+               {
+               "symbol": "ALXN",
+               "name": "Alexion Pharmaceuticals Inc",
+               "currency": "USD",
+               "price": 180.29,
+               "delta": -0.007321537522879784
+               },
+               {
+               "symbol": "AMAT",
+               "name": "Applied Materials Inc",
+               "currency": "USD",
+               "price": 24.1,
+               "delta": 0.0012448132780082943
+               },
+               {
+               "symbol": "AMGN",
+               "name": "Amgen Inc",
+               "currency": "USD",
+               "price": 155.78,
+               "delta": -0.009885736294774627
+               },
+               {
+               "symbol": "AMZN",
+               "name": "Amazon.com Inc",
+               "currency": "USD",
+               "price": 373.37,
+               "delta": 0.005517315263679379
+               },
+               {
+               "symbol": "ATVI",
+               "name": "Activision Blizzard Inc",
+               "currency": "USD",
+               "price": 23.41,
+               "delta": 0.0034173430158050966
+               },
+               {
+               "symbol": "AVGO",
+               "name": "Avago Technologies Ltd",
+               "currency": "USD",
+               "price": 110,
+               "delta": 0.007909090909090866
+               },
+               {
+               "symbol": "BBBY",
+               "name": "Bed Bath & Beyond Inc",
+               "currency": "USD",
+               "price": 76.95,
+               "delta": 0.009226770630279324
+               },
+               {
+               "symbol": "BIDU",
+               "name": "Baidu Inc",
+               "currency": "USD",
+               "price": 207.15,
+               "delta": 0.008013516775283502
+               },
+               {
+               "symbol": "BIIB",
+               "name": "Biogen Idec Inc",
+               "currency": "USD",
+               "price": 401.12,
+               "delta": -0.008002592740326997
+               },
+               {
+               "symbol": "BRCM",
+               "name": "Broadcom Corp",
+               "currency": "USD",
+               "price": 45.41,
+               "delta": 0.005064963664391131
+               },
+               {
+               "symbol": "CA",
+               "name": "CA Inc",
+               "currency": "USD",
+               "price": 32.59,
+               "delta": -0.0003068425897516658
+               },
+               {
+               "symbol": "CELG",
+               "name": "Celgene Corp",
+               "currency": "USD",
+               "price": 118.41,
+               "delta": -0.01765053627227431
+               },
+               {
+               "symbol": "CERN",
+               "name": "Cerner Corp",
+               "currency": "USD",
+               "price": 70.6,
+               "delta": -0.012039660056657131
+               },
+               {
+               "symbol": "CHKP",
+               "name": "Check Point Software Technologies Ltd",
+               "currency": "USD",
+               "price": 81.29,
+               "delta": -0.006765899864682123
+               },
+               {
+               "symbol": "CHRW",
+               "name": "C.H. Robinson Worldwide Inc",
+               "currency": "USD",
+               "price": 71.38,
+               "delta": 0.006024096385542244
+               },
+               {
+               "symbol": "CHTR",
+               "name": "Charter Communications Inc",
+               "currency": "USD",
+               "price": 174.29,
+               "delta": 0.01239313787365881
+               },
+               {
+               "symbol": "CMCSA",
+               "name": "Comcast Corp",
+               "currency": "USD",
+               "price": 58.22,
+               "delta": 0.009962212298179285
+               },
+               {
+               "symbol": "COST",
+               "name": "Costco Wholesale Corp",
+               "currency": "USD",
+               "price": 147.23,
+               "delta": 0.002037628200774355
+               },
+               {
+               "symbol": "CSCO",
+               "name": "Cisco Systems Inc",
+               "currency": "USD",
+               "price": 29.49,
+               "delta": -0.006103763987792443
+               },
+               {
+               "symbol": "CTRX",
+               "name": "Catamaran Corp",
+               "currency": "USD",
+               "price": 52.61,
+               "delta": 0.003421402775137805
+               },
+               {
+               "symbol": "CTSH",
+               "name": "Cognizant Technology Solutions Corp",
+               "currency": "USD",
+               "price": 61.09,
+               "delta": -0.01473236208872164
+               },
+               {
+               "symbol": "CTXS",
+               "name": "Citrix Systems Inc",
+               "currency": "USD",
+               "price": 63.72,
+               "delta": 0.006905210295040876
+               },
+               {
+               "symbol": "DISCA",
+               "name": "Discovery Communications Inc",
+               "currency": "USD",
+               "price": 30.9,
+               "delta": -0.003236245954692518
+               },
+               {
+               "symbol": "DISH",
+               "name": "DISH Network Corp",
+               "currency": "USD",
+               "price": 76.29,
+               "delta": 0.00576746624721447
+               },
+               {
+               "symbol": "DLTR",
+               "name": "Dollar Tree Inc",
+               "currency": "USD",
+               "price": 77.02,
+               "delta": -0.0037652557777200224
+               },
+               {
+               "symbol": "DTV",
+               "name": "DIRECTV",
+               "currency": "USD",
+               "price": 87.34,
+               "delta": 0.0014884359972520134
+               },
+               {
+               "symbol": "EBAY",
+               "name": "eBay Inc",
+               "currency": "USD",
+               "price": 56.9,
+               "delta": -0.00852372583479788
+               },
+               {
+               "symbol": "EQIX",
+               "name": "Equinix Inc",
+               "currency": "USD",
+               "price": 228.91,
+               "delta": -0.016294613603599628
+               },
+               {
+               "symbol": "ESRX",
+               "name": "Express Scripts Holding Co",
+               "currency": "USD",
+               "price": 85.17,
+               "delta": 0.0002348244687095935
+               },
+               {
+               "symbol": "EXPD",
+               "name": "Expeditors International of Washington Inc",
+               "currency": "USD",
+               "price": 45.595,
+               "delta": 0.0058120407939468155
+               },
+               {
+               "symbol": "EXPE",
+               "name": "Expedia Inc",
+               "currency": "USD",
+               "price": 89.16,
+               "delta": -0.005271422162404615
+               },
+               {
+               "symbol": "FAST",
+               "name": "Fastenal Co",
+               "currency": "USD",
+               "price": 43.06,
+               "delta": -0.010450534138411571
+               },
+               {
+               "symbol": "FB",
+               "name": "Facebook",
+               "currency": "USD",
+               "price": 76.71,
+               "delta": -0.014470082127493122
+               },
+               {
+               "symbol": "FFIV",
+               "name": "F5 Networks Inc",
+               "currency": "USD",
+               "price": 117.62,
+               "delta": -0.01011732698520662
+               },
+               {
+               "symbol": "FISV",
+               "name": "Fiserv Inc",
+               "currency": "USD",
+               "price": 79.05,
+               "delta": -0.00398481973434528
+               },
+               {
+               "symbol": "FOSL",
+               "name": "Fossil Group Inc",
+               "currency": "USD",
+               "price": 83.69,
+               "delta": 0.1867606643565538
+               },
+               {
+               "symbol": "FOXA",
+               "name": "21st Century Fox Class A",
+               "currency": "USD",
+               "price": 34.66,
+               "delta": 0.011540680900173239
+               },
+               {
+               "symbol": "GILD",
+               "name": "Gilead Sciences Inc",
+               "currency": "USD",
+               "price": 103.94,
+               "delta": -0.0009620935154897037
+               },
+               {
+               "symbol": "GMCR",
+               "name": "Keurig Green Mountain Inc",
+               "currency": "USD",
+               "price": 118.2,
+               "delta": -0.002284263959390853
+               },
+               {
+               "symbol": "GOOG",
+               "name": "Google Class C",
+               "currency": "USD",
+               "price": 539.7,
+               "delta": 0.005818047063183229
+               },
+               {
+               "symbol": "GOOGL",
+               "name": "Google Class A",
+               "currency": "USD",
+               "price": 542.65,
+               "delta": 0.004349027918547854
+               },
+               {
+               "symbol": "GRMN",
+               "name": "Garmin Ltd",
+               "currency": "USD",
+               "price": 50.71,
+               "delta": 0.12029185564977318
+               },
+               {
+               "symbol": "HSIC",
+               "name": "Henry Schein Inc",
+               "currency": "USD",
+               "price": 142.085,
+               "delta": 0.00165393954323112
+               },
+               {
+               "symbol": "ILMN",
+               "name": "Illumina Inc",
+               "currency": "USD",
+               "price": 198.62,
+               "delta": 0.0012083375289497766
+               },
+               {
+               "symbol": "INTC",
+               "name": "Intel Corp",
+               "currency": "USD",
+               "price": 34.265,
+               "delta": 0.013716620458193551
+               },
+               {
+               "symbol": "INTU",
+               "name": "Intuit Inc",
+               "currency": "USD",
+               "price": 89.76,
+               "delta": 0.003676470588235281
+               },
+               {
+               "symbol": "ISRG",
+               "name": "Intuitive Surgical Inc",
+               "currency": "USD",
+               "price": 512.86,
+               "delta": 0.0022228288421790587
+               },
+               {
+               "symbol": "KLAC",
+               "name": "KLA-Tencor Corp",
+               "currency": "USD",
+               "price": 64.29,
+               "delta": -0.005599626691554005
+               },
+               {
+               "symbol": "KRFT",
+               "name": "Kraft Foods Group Inc",
+               "currency": "USD",
+               "price": 64.745,
+               "delta": -0.007336473858985393
+               },
+               {
+               "symbol": "LBTYA",
+               "name": "Liberty Global PLC",
+               "currency": "USD",
+               "price": 52.4,
+               "delta": 0.009160305343511421
+               },
+               {
+               "symbol": "LLTC",
+               "name": "Linear Technology Corp",
+               "currency": "USD",
+               "price": 47.96,
+               "delta": 0.016472060050041648
+               },
+               {
+               "symbol": "LMCA",
+               "name": "Liberty Media Corp",
+               "currency": "USD",
+               "price": 38.56,
+               "delta": -0.011410788381742809
+               },
+               {
+               "symbol": "MAR",
+               "name": "Marriott International Inc",
+               "currency": "USD",
+               "price": 81.45,
+               "delta": -0.001964395334561053
+               },
+               {
+               "symbol": "MAT",
+               "name": "Mattel Inc",
+               "currency": "USD",
+               "price": 26.7,
+               "delta": 0.011985018726591745
+               },
+               {
+               "symbol": "MDLZ",
+               "name": "Mondelez International Inc",
+               "currency": "USD",
+               "price": 36.94,
+               "delta": 0.005684894423389375
+               },
+               {
+               "symbol": "MNST",
+               "name": "Monster Beverage Corp",
+               "currency": "USD",
+               "price": 120.28,
+               "delta": -0.013094446291985418
+               },
+               {
+               "symbol": "MSFT",
+               "name": "Microsoft Corp",
+               "currency": "USD",
+               "price": 43.53,
+               "delta": 0.0011486331265793126
+               },
+               {
+               "symbol": "MU",
+               "name": "Micron Technology Inc",
+               "currency": "USD",
+               "price": 32.17,
+               "delta": 0.004973577867578349
+               },
+               {
+               "symbol": "MXIM",
+               "name": "Maxim Integrated Products Inc",
+               "currency": "USD",
+               "price": 34.62,
+               "delta": 0.0023108030040439598
+               },
+               {
+               "symbol": "MYL",
+               "name": "Mylan Inc",
+               "currency": "USD",
+               "price": 56.55,
+               "delta": -0.00035366931918645594
+               },
+               {
+               "symbol": "NASDAQOMX",
+               "name": "NASDAQ-100 (NDX)",
+               "currency": "USD",
+               "price": 4994350690932,
+               "delta": -0.0012684437463517106
+               },
+               {
+               "symbol": "NFLX",
+               "name": "Netflix Inc",
+               "currency": "USD",
+               "price": 475.06,
+               "delta": -0.010735486043868203
+               },
+               {
+               "symbol": "NTAP",
+               "name": "NetApp Inc",
+               "currency": "USD",
+               "price": 37.8,
+               "delta": -0.0002645502645501896
+               },
+               {
+               "symbol": "NVDA",
+               "name": "NVIDIA Corp",
+               "currency": "USD",
+               "price": 22.12,
+               "delta": 0.011528028933092127
+               },
+               {
+               "symbol": "ORLY",
+               "name": "O''Reilly Automotive Inc",
+               "currency": "USD",
+               "price": 205.78,
+               "delta": -0.000388764700165245
+               },
+               {
+               "symbol": "PAYX",
+               "name": "Paychex Inc",
+               "currency": "USD",
+               "price": 48.96,
+               "delta": -0.004084967320261534
+               },
+               {
+               "symbol": "PCAR",
+               "name": "PACCAR Inc",
+               "currency": "USD",
+               "price": 64.495,
+               "delta": -0.0005426777269557093
+               },
+               {
+               "symbol": "PCLN",
+               "name": "The Priceline Group",
+               "currency": "USD",
+               "price": 1122.99,
+               "delta": -0.001780959759214218
+               },
+               {
+               "symbol": "QCOM",
+               "name": "Qualcomm Inc",
+               "currency": "USD",
+               "price": 70.54,
+               "delta": 0.003685851998865841
+               },
+               {
+               "symbol": "REGN",
+               "name": "Regeneron Pharmaceuticals Inc",
+               "currency": "USD",
+               "price": 405.8,
+               "delta": -0.003992114342040387
+               },
+               {
+               "symbol": "ROST",
+               "name": "Ross Stores Inc",
+               "currency": "USD",
+               "price": 96.7,
+               "delta": 0.0015511892450879028
+               },
+               {
+               "symbol": "SBAC",
+               "name": "SBA Communications Corp",
+               "currency": "USD",
+               "price": 122.17,
+               "delta": 0.00008185315543918215
+               },
+               {
+               "symbol": "SBUX",
+               "name": "Starbucks Corp",
+               "currency": "USD",
+               "price": 93,
+               "delta": -0.010430107526881671
+               },
+               {
+               "symbol": "SIAL",
+               "name": "Sigma-Aldrich Corp",
+               "currency": "USD",
+               "price": 138.28,
+               "delta": 0.0001446340757882414
+               },
+               {
+               "symbol": "SNDK",
+               "name": "SanDisk Corp",
+               "currency": "USD",
+               "price": 81.94,
+               "delta": 0.003112033195020736
+               },
+               {
+               "symbol": "SPLS",
+               "name": "Staples Inc",
+               "currency": "USD",
+               "price": 17.03,
+               "delta": -0.0011743981209629828
+               },
+               {
+               "symbol": "SRCL",
+               "name": "Stericycle Inc",
+               "currency": "USD",
+               "price": 134.65,
+               "delta": -0.020349053100631287
+               },
+               {
+               "symbol": "STX",
+               "name": "Seagate Technology PLC",
+               "currency": "USD",
+               "price": 61.18,
+               "delta": -0.0004903563255965748
+               },
+               {
+               "symbol": "SYMC",
+               "name": "Symantec Corp",
+               "currency": "USD",
+               "price": 25.69,
+               "delta": 0.012066952121448038
+               },
+               {
+               "symbol": "TRIP",
+               "name": "TripAdvisor Inc",
+               "currency": "USD",
+               "price": 85.58,
+               "delta": -0.015424164524421524
+               },
+               {
+               "symbol": "TSCO",
+               "name": "Tractor Supply Co",
+               "currency": "USD",
+               "price": 84.88,
+               "delta": -0.003652214891611716
+               },
+               {
+               "symbol": "TSLA",
+               "name": "Tesla Motors Inc",
+               "currency": "USD",
+               "price": 204.46,
+               "delta": -0.0005380025432848434
+               },
+               {
+               "symbol": "TXN",
+               "name": "Texas Instruments Inc",
+               "currency": "USD",
+               "price": 57.94,
+               "delta": 0.004487400759406457
+               },
+               {
+               "symbol": "VIAB",
+               "name": "Viacom Inc",
+               "currency": "USD",
+               "price": 68.09,
+               "delta": 0.018358055514759775
+               },
+               {
+               "symbol": "VOD",
+               "name": "Vodafone Group PLC",
+               "currency": "USD",
+               "price": 34.85,
+               "delta": 0.017790530846484964
+               },
+               {
+               "symbol": "VRSK",
+               "name": "Verisk Analytics Inc",
+               "currency": "USD",
+               "price": 67.69,
+               "delta": -0.0019205200177278003
+               },
+               {
+               "symbol": "VRTX",
+               "name": "Vertex Pharmaceuticals Inc",
+               "currency": "USD",
+               "price": 113.57,
+               "delta": -0.001496874174517826
+               },
+               {
+               "symbol": "WDC",
+               "name": "Western Digital Corp",
+               "currency": "USD",
+               "price": 109,
+               "delta": -0.02045871559633028
+               },
+               {
+               "symbol": "WFM",
+               "name": "Whole Foods Market Inc",
+               "currency": "USD",
+               "price": 57.2,
+               "delta": -0.022202797202797275
+               },
+               {
+               "symbol": "WYNN",
+               "name": "Wynn Resorts Ltd",
+               "currency": "USD",
+               "price": 158.52,
+               "delta": -0.00958869543275298
+               },
+               {
+               "symbol": "XLNX",
+               "name": "Xilinx Inc",
+               "currency": "USD",
+               "price": 41.655,
+               "delta": 0.006481814908174233
+               },
+               {
+               "symbol": "YHOO",
+               "name": "Yahoo Inc",
+               "currency": "USD",
+               "price": 43.65,
+               "delta": -0.0027491408934707806
+               }
+               ]
+}
