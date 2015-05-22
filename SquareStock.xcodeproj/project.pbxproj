@@ -24,6 +24,7 @@
 		B2DA51C81B0D58090078AC36 /* NASDAQ100.json in Resources */ = {isa = PBXBuildFile; fileRef = B2DA51C71B0D58090078AC36 /* NASDAQ100.json */; };
 		B2DA51CA1B0D581A0078AC36 /* IncompleteJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = B2DA51C91B0D581A0078AC36 /* IncompleteJSON.json */; };
 		B2DA51CC1B0D5BD90078AC36 /* EmptyJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = B2DA51CB1B0D5BD90078AC36 /* EmptyJSON.json */; };
+		B2DA51CE1B0EAB5F0078AC36 /* MissingPropertyStock.json in Resources */ = {isa = PBXBuildFile; fileRef = B2DA51CD1B0EAB5F0078AC36 /* MissingPropertyStock.json */; };
 		B2F3E1521B00A6A900E4016F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F3E1511B00A6A900E4016F /* Main.storyboard */; };
 		B2F755281AFA7F3B0094CC98 /* Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F755271AFA7F3B0094CC98 /* Parsing.swift */; };
 		B2F755311AFA87C20094CC98 /* FunctionalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F755301AFA87C20094CC98 /* FunctionalHelpers.swift */; };
@@ -65,6 +66,7 @@
 		B2DA51C71B0D58090078AC36 /* NASDAQ100.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NASDAQ100.json; sourceTree = "<group>"; };
 		B2DA51C91B0D581A0078AC36 /* IncompleteJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = IncompleteJSON.json; sourceTree = "<group>"; };
 		B2DA51CB1B0D5BD90078AC36 /* EmptyJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EmptyJSON.json; sourceTree = "<group>"; };
+		B2DA51CD1B0EAB5F0078AC36 /* MissingPropertyStock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MissingPropertyStock.json; sourceTree = "<group>"; };
 		B2F3E1511B00A6A900E4016F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B2F755271AFA7F3B0094CC98 /* Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parsing.swift; sourceTree = "<group>"; };
 		B2F755301AFA87C20094CC98 /* FunctionalHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalHelpers.swift; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 				B2DA51C91B0D581A0078AC36 /* IncompleteJSON.json */,
 				B2DA51CB1B0D5BD90078AC36 /* EmptyJSON.json */,
 				B2DA51C71B0D58090078AC36 /* NASDAQ100.json */,
+				B2DA51CD1B0EAB5F0078AC36 /* MissingPropertyStock.json */,
 			);
 			path = "Mocked Responses";
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2DA51CE1B0EAB5F0078AC36 /* MissingPropertyStock.json in Resources */,
 				B2DA51C81B0D58090078AC36 /* NASDAQ100.json in Resources */,
 				B2DA51CA1B0D581A0078AC36 /* IncompleteJSON.json in Resources */,
 				B2DA51CC1B0D5BD90078AC36 /* EmptyJSON.json in Resources */,

@@ -27,6 +27,11 @@ class ParsingTests: XCTestCase {
         assertOptional(parseStocks(result).value){XCTAssertTrue($0.count == 0)}
     }
     
+    func testMissingProperty() {
+        let result = resultFromJSON("MissingPropertyStock")
+        assertOptional(parseStocks(result).error){XCTAssertTrue($0.code == Error.ParseError.rawValue)}
+    }
+
     func testIncompleteJSON() {
         let result = resultFromJSON("IncompleteJSON")
         assertOptional(parseStocks(result).error){XCTAssertTrue($0.code == Error.ParseError.rawValue)}
